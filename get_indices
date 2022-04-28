@@ -1,0 +1,7 @@
+def get_indices(d):
+    ord_map = {5:100, 6:90, 4:80}
+    tmp = d["Запрос"].str.split().str.len().map(ord_map).fillna(0).values
+    # print(d.assign(x=tmp))
+    return d.assign(x=tmp).nlargest(1, ["x", "длстр"]).index[0]
+
+res = df.loc[df.groupby("группа").apply(get_indices)]
