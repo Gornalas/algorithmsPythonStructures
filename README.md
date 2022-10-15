@@ -1,4 +1,2 @@
 # algorithmsPythonStructures
-My solved problems
-
-Try to understand new interface. So sad.
+В данном сборнике присутствуют задачи на понимание и использование алгоритмов программирования. 
